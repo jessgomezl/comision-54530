@@ -8,18 +8,28 @@
     font-family: url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,400&display=swap');
   }
 
-  header{
-    height: 500px;
-    position: relative;
+  body{
+    height: 100%;
   }
 
-  main{
-    height: 100vh;
-    position: absolute;
+  header{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-class {
+    height: 1900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   footer{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     bottom: 0;
     border-top: 2px solid rgb(104, 66, 241)  ;
     width: 100%;
@@ -29,7 +39,9 @@
 
   .encabezado{
     display: flex;
+    flex-direction: column-reverse;
     position: absolute;
+    align-items: center;
     background-color: rgb(103, 65, 241);
     width:100%;
     height: 450px;
@@ -68,9 +80,8 @@
     width: 60%;
     height: 40px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex;
-    position: sticky;
     gap: 20px;
     top: 0;
     z-index: 4;
@@ -78,8 +89,9 @@
 
   .navbar{
     display: flex;
+    align-items: center;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 20px;
     list-style: none;
   }
@@ -94,7 +106,7 @@
   }
 
   .navbar li a:hover{
-    color: rgb(199, 228, 212);
+    color: rgba(119, 228, 212, 1);
   }
 
   .belleza-item{
@@ -105,44 +117,90 @@
     background-size: 90% 605px;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .catl-resg{
+    margin-bottom: 10px;
     background-color: rgb(110, 243, 139);
     width: 100%;
     height: 490px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     list-style: none;
-  }
-
-  .catalogo{
-    display: flex;
     background-image: url(../assets/images/banner-2.jpg);
-    background-size: 755px 376px;
+    background-size: 755px 375px;
     background-repeat: no-repeat;
     background-position: left;
   }
 
+  .catalogo{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: flex-end;
+  }
+.catalogo p{
+  font-size: 30px;
+  text-align: right;
+  text-decoration-color: rgba(119, 228, 212, 1);
+  word-spacing: 2px;
+}
   .catalogo button{
-    width: 150px;
-    height: 40px ;
+    width: 480px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    appearance: auto;
+    color: rgba(119, 228, 212, 1);
+    font-size: 32px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: salmon;
+    border-image: outset ;
+    border-bottom: 2px solid rgb(61, 60, 59);
   }
 
-  .registrarme{
-    
+  .lista-registrarme{
     display: flex;
-    font-size: 85px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .registrarme p{
+    font-size: 35px;
+    word-spacing: 2px;
+  }
+  .registrarme button{
+    width: 370px;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 32px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: salmon;
+    border-image: outset ;
+    border-bottom: 2px solid rgb(61, 60, 59);
+  }
+  .registrarme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 
   .footer{
     bottom: 0;
     width: 100%;
-    padding: 40px;
-    margin-top: 60px;
+    padding: 30px;
+    margin-top: 50px;
     font-size: 16px;
     list-style: none;
     display: grid;
@@ -169,9 +227,20 @@
     width: 40px;
   }
 
-  .accesorios-banner{
+  .seccion-accesorios{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+  }
+  .contenedor-banner-accesorios{
+    width: 100%;
+    height: 300px;
     background-image: url(../assets/images/baner-accesorios.jpg);
-    background-size: 100% 375px;
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
   }
 
   .accesorios-banner h1{
@@ -180,226 +249,1262 @@
     list-style: none;
   }
 
-  .belleza-banner{
+  .seccion-belleza{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     list-style: none;
+  }
+  .contenedor-banner-belleza{
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/images/carrusel.jpg);
+    background-size: 100% 270px;
+    background-repeat: no-repeat;
+  }
+  .belleza-banner h1{
     font-size: 58px;
     text-align: left;
-    background-image: url(../assets/images/banner-belleza.jpg);
-    background-size: 100% 355px;
+    list-style: none;
   }
 
-  .manicuria-banner{
+  .seccion-manicuria{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+  }
+  .contenedor-banner-manicuria{
+    width: 100%;
+    height: 300px;
     background-image: url(../assets/images/banner-manicuria.jpg);
-    background-size: 100% 375px;
+    background-size: 100% 280px;
+    background-repeat: no-repeat;
+  }
+  .manicuria-banner h1{
+    font-size: 58px;
+    text-align: left;
+    list-style: none;
   }
 
+  .seccion-accesorios-2{
+    display: flex;
+    height: 1500px;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    margin: 25px;
+  }
+  
   .contenedor-accesorios{
     display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: repeat(3, 1fr) ;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas:
-    "arriba arriba arriba arriba"
-    "medio  medio  medio   medio"
-    "abajo  abajo  abajo   abajo"
-    ;
+    grid-template-columns: repeat(3, 225px);
+    grid-template-rows: repeat(3, 290);
+    column-gap: 20px;
+    row-gap: 10px;
+    justify-content: center;
   }
 
-.abanico{
-    grid-area: arriba;
-    background-image: url(../assets/images/abanico.jpg);
-    background-size: 220px 190px;
-    background-repeat: no-repeat;
+  .abanico{
+    list-style: none;
+  }
+  .abanico img{
+    height: 190px;
+    width: 225px;
+  }
+  .abanico h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  } 
+  .abanico button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
   }
 
 .billetera-1{
-  grid-area: arriba;
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .billetera-1 img{
+    height: 190px;
+    width: 225px;
+  }
+  .billetera-1 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .billetera-1 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .billetera-2{
-  grid-area: arriba;
-  height: 190px;
-  width: 220px ;
-}
+  list-style: none;
+  }
+  .billetera-2 img{
+    height: 190px;
+    width: 225px;
+  }
+  .billetera-2 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .billetera-2 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .billetera-3{
-  grid-area: arriba;
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .billetera-3 img{
+    height: 190px;
+    width: 225px;
+  }
+  .billetera-3 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .billetera-3 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .billetera-4{
-  grid-area: medio;
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .billetera-4 img{
+    height: 190px;
+    width: 225px;
+  }
+  .billetera-4 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .billetera-4 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .billetera-5{
-  grid-area: medio;
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  } 
+  .billetera-5 img{
+    height: 190px;
+    width: 225px;
+  }
+  .billetera-5 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .billetera-5 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .billetera-6{
-  grid-area: medio;
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .billetera-6 img{
+    height: 190px;
+    width: 225px;
+  }
+  .billetera-6 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .billetera-6 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .organizador-de-viaje{
-  grid-area: medio;
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .organizador-de-viaje img{
+    height: 190px;
+    width: 225px;
+  }
+  .organizador-de-viaje h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .organizador-de-viaje button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .paraguas-lisos{
-  grid-area: abajo;
-  height: 190px;
-  width: 220px;
-}
+  list-style: none
+  }
+  .paraguas-lisos img{
+    height: 190px;
+    width: 225px;
+  }
+  .paraguas-lisos h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .paraguas-lisos button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .paraguas-estampados{
-  grid-area: abajo;
-  height: 190px;
-  width: 220px;
-}
+  list-style: none ;
+  }
+  .paraguas-estampados img{
+    height: 190px;
+    width: 225px;
+  }
+  .paraguas-estampados h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .paraguas-estampados button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .portacelulares{
-  grid-area: abajo;
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .portacelulares img{
+    height: 190px;
+    width: 225px;
+  }
+  .portacelulares h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .portacelulares button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
+  .seccion-belleza-2{
+    display: flex;
+    height: 1500px;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    margin: 25px;
+  }
+
+  .contenedor-belleza{
+    display: grid;
+    grid-template-columns: repeat(3, 225px);
+    grid-template-rows: repeat(3, 290);
+    column-gap: 20px;
+    row-gap: 10px;
+    justify-content: center;
+  }
 .brocha-1{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .brocha-1 img{
+    height: 190px;
+    width: 225px
+  }
+  .brocha-1 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .brocha-1 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .brocha-2{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .brocha-2 img{
+    height: 190px;
+    width: 225px;
+  }
+  .brocha-2 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .brocha-2 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .brocha-3{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .brocha-3 img{
+    height: 190px;
+    width: 225px;
+  }
+  .brocha-3 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .brocha-3 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .cepillo-1{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .cepillo-1 img{
+    height: 190px;
+    width: 225px;
+  }
+  .cepillo-1 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .cepillo-1 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .cepillo-cuadrado{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .cepillo-cuadrado img{
+    height: 190px;
+    width: 225px;
+  }
+  .cepillo-cuadrado h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .cepillo-cuadrado button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .cepillo-redondo{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .cepillo-redondo img{
+    height: 190px;
+    width: 225px;
+  }
+  .cepillo-redondo h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .cepillo-redondo button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .espejo-1{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .espejo-1 img{
+    height: 190px;
+    width: 225px;
+  }
+  .espejo-1 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .espejo-1 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .kit-brochas{
-  height: 190px ;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .kit-brochas img{
+    height: 190px;
+    width: 225px;
+  }
+  .kit-brochas h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .kit-brochas button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .peine-espejo{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .peine-espejo img{
+    height: 190px;
+    width: 225px;
+  }
+  .peine-espejo h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .peine-espejo button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .peine-1{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .peine-1 img{
+    height: 190px;
+    width: 225px;
+  }
+  .peine-1 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .peine-1 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .peine-2{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .peine-2 img{
+    height: 190px;
+    width: 225px;
+  }
+  .peine-2 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .peine-2 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .peine-3{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .peine-3 img{
+    height: 190px;
+    width: 225px;
+  }
+  .peine-3 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .peine-3 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .portacosmeticos-1{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .portacosmeticos-1 img{
+    height: 190px;
+    width: 225px;
+  }
+  .portacosmeticos-1 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .portacosmeticos-1 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .portacosmeticos-2{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .portacosmeticos-2 img{
+    height: 190px;
+    width: 225px;
+  }
+  .portacosmeticos-2 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .portacosmeticos-2 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .portacosmeticos-3{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .portacosmeticos-3 img{
+    height: 190px;
+    width: 225px;
+  }
+  .portacosmeticos-3 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .portacosmeticos-3 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .portacosmeticos-4{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .portacosmeticos-4 img{
+    height: 190px;
+    width: 225px;
+  }
+  .portacosmeticos-4 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .portacosmeticos-4 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
+
+.seccion-manicuria-2{
+  display: flex;
+    height: 1500px;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    margin: 25px;
+  }
+  .contenedor-manicuria{
+    display: grid;
+    grid-template-columns: repeat(3, 225px);
+    grid-template-rows: repeat(3, 290);
+    column-gap: 20px;
+    row-gap: 10px;
+    justify-content: center;
+  }
 
 .alicate-1{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .alicate-1 img{
+    height: 190px;
+    width: 225px;
+  }
+  .alicate-1 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .alicate-1 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .alicate-2{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .alicate-2 img{
+    height: 190px;
+    width: 225px;
+  }
+  .alicate-2 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .alicate-2 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .bloque-para-uñas-1{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .bloque-para-uñas-1 img{
+    height: 190px;
+    width: 225px;
+  }
+  .bloque-para-uñas-1 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .bloque-para-uñas-1 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .bloque-para-uñas-2{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .bloque-para-uñas-2 img{
+    height: 190px;
+    width: 225px;
+  }
+  .bloque-para-uñas-2 h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .bloque-para-uñas-2 button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .kit-manicuria-bebe{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .kit-manicuria-bebe img{
+    height: 190px;
+    width: 225px;
+  }
+  .kit-manicuria-bebe h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .kit-manicuria-bebe button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .portaesmalte{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .portaesmalte img{
+    height: 190px;
+    width: 225px;
+  }
+  .portaesmalte h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .portaesmalte button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .manicuria-5-piezas{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .manicuria-5-piezas img{
+    height: 190px;
+    width: 225px;
+  }
+  .manicuria-5-piezas h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .manicuria-5-piezas button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .manicuria-6-piezas{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .manicuria-6-piezas img{
+    height: 190px;
+    width: 225px;
+  }
+  .manicuria-6-piezas h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .manicuria-6-piezas button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .manicuria-9-piezas{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .manicuria-9-piezas img{
+    height: 190px;
+    width: 225px;
+  }
+  .manicuria-9-piezas h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .manicuria-9-piezas button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
 
 .manicuria-10-piezas{
-  height: 190px;
-  width: 220px;
-}
+  list-style: none;
+  }
+  .manicuria-10-piezas img{
+    height: 190px;
+    width: 225px;
+  }
+  .manicuria-10-piezas h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(110, 243, 139);
+    border: 1px solid black;
+  }
+  .manicuria-10-piezas button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid grey;
+  }
+  .contenedor-li{
+    background-color:rgb(110, 243, 139) ;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .contenedor-li h1{
+    font-size: 40px;
+  }
+  .contenedor-li p{
+    font-size: 30px;
+    word-spacing: 3px;
+  }
+
+
 
