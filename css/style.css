@@ -25,6 +25,12 @@
     flex-direction: column;
     align-items: center;
   }
+  .main-class-2{
+    height: 2200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   footer{
     display: flex;
