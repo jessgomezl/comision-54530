@@ -19,7 +19,7 @@
     align-items: center;
   }
 
-  .main-class {
+  .main-class{
     height: 1900px;
     display: flex;
     flex-direction: column;
@@ -30,6 +30,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .main-class-3{
+    height: 900px;
+    margin-top:10px;
+    margin-bottom: 10px;
   }
 
   footer{
@@ -119,10 +125,17 @@
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
   }
+  .belleza-item h2{
+    font-size: 75px;
+  }
+  .belleza-item p{
+    font-size: 25px;
+    word-spacing: 3%;
 
+  }
   .catl-resg{
     margin-bottom: 10px;
     background-color: rgb(110, 243, 139);
@@ -237,6 +250,8 @@
     width: 40px;
   }
 
+  /** clasifico el main de accesorios-belleza-manicuria **/
+
   .seccion-accesorios{
     width: 100%;
     height: 320px;
@@ -318,6 +333,8 @@
     row-gap: 10px;
     justify-content: center;
   }
+
+  /** empieza page accesorios **/
 
   .abanico{
     list-style: none;
@@ -659,6 +676,8 @@
     border-image: initial;
     border-bottom: 2px solid grey;
   }
+
+  /** empieza page belleza **/
 
   .seccion-belleza-2{
     display: flex;
@@ -1173,6 +1192,8 @@
     border-bottom: 2px solid grey;
   }
 
+  /** empieza page manicuria **/
+
 .seccion-manicuria-2{
   display: flex;
     height: 1500px;
@@ -1499,6 +1520,9 @@
     border-image: initial;
     border-bottom: 2px solid grey;
   }
+
+  /** doy clase page ingresar **/
+
   .contenedor-li{
     background-color:rgb(110, 243, 139) ;
     width: 100%;
@@ -1516,7 +1540,78 @@
     word-spacing: 3px;
   }
 
+  .contenedor-nombre{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 200px;
+  }
+  .contenedor-nombre label{
+    font-size: 30px;
+    word-spacing: 2px;
+  }
+  .contenedor-nombre input{
+    font-size: 30px;
+    word-spacing: 2px;
+  }
+  .contenedor-email{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 200px;
+  }
+  .contenedor-email label{
+    font-size: 30px;
+    word-spacing: 2px;
+  }
+  .contenedor-email input{
+    font-size: 30px;
+    word-spacing: 2px;
+  }
+  .contenedor-contra{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 200px;
+  }
+  .contenedor-contra label{
+    font-size: 30px;
+    word-spacing: 2px;
+  }
+  .contenedor-contra input{
+    font-size: 30px;
+    word-spacing: 2px;
+  }
+  .reg-but{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .but-regristrarse button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    appearance: auto;
+    color: aquamarine;
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(1, 15, 4);
+    border-image: initial;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.795);
+  }
 
+  .contenedor-registro{
+    width: 100%;
+    height: 500px;
+    display: flex;
+  }
+
+/** aplico media queries **/
 
   @media (max-width:1024px){
     header{
@@ -1530,6 +1625,13 @@
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+    }
+    .belleza-item h2{
+      font-size: 55px;
+    }
+    .belleza-item p{
+      font-size: 17px;
+      word-spacing: 2px;
     }
     .catl-resg{
       display: flex;
@@ -1551,22 +1653,49 @@
   }
 
   @media (max-width:320px){
-    
+    header{
+      height: 200px;
+    }
     .encabezado{
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       background-color: rgb(103, 65, 241);
+      background-image: url(../assets/images/banner.jpg);
+      background-size: initial;
+      background-position-y:top;
       width:100%;
-      height: 250px;
+      height: 200px;
+      
     }
     .contenedor-img{
       display: none;
     }
+    nav{
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+    }
     .navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-  }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:center;
+    }
+    .navbar li{
+      display: flex;
+      flex-direction: row;
+      font-size: 21px;
+      font-weight: bold;
+      word-spacing: 2px;
+    }
+  
+    .navbar li a:hover{
+      color: rgba(119, 228, 212, 1);
+    }
+    .belleza-item h2{
+      font-size: 20px;
+    }
+    .belleza-item p{
+      font-size: 15px;
+    }
   }
