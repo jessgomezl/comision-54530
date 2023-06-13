@@ -1,0 +1,664 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div li button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  appearance: auto;
+  color: rgb(119, 228, 212);
+  font-size: 15px;
+  font-family: "Merriweather", serif;
+  background-color: rgb(1, 15, 4);
+  width: 225px;
+  border-image: initial;
+  border-bottom: 2px solid grey;
+}
+
+.boton-vicky {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  appearance: auto;
+  color: rgb(119, 228, 212);
+  font-size: 17px;
+  font-family: "Merriweather", serif;
+  background-color: rgb(1, 15, 4);
+  width: 70%;
+  line-height: 30px;
+  border-image: initial;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.795);
+}
+
+body {
+  height: 100%;
+}
+
+header {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: rgb(103, 65, 241);
+  width: 100%;
+  height: 450px;
+  background-image: url(../assets/images/banner.jpg);
+  background-size: 100% 400px;
+  background-repeat: no-repeat;
+  background-position: 0px 80px;
+}
+header section div {
+  display: flex;
+  flex-direction: row;
+}
+header section div img {
+  width: 40px;
+  height: 40px;
+}
+header section nav {
+  background-color: rgb(103, 65, 241);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 4;
+}
+header section nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+header section nav ul li {
+  display: flex;
+  list-style: none;
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  font-weight: bold;
+  word-spacing: 15px;
+}
+header section nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+header section nav ul li a:hover {
+  color: rgb(119, 228, 212);
+}
+
+.carousel-item {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.carousel-item img {
+  height: 650px;
+  width: 90%;
+}
+.carousel-item h2 {
+  font-family: "Merriweather", serif;
+  font-size: 50px;
+}
+.carousel-item p {
+  font-family: "Merriweather", serif;
+  font-size: 25px;
+  word-spacing: 3%;
+}
+
+.catl-resg {
+  margin-bottom: 10px;
+  background-color: rgb(110, 243, 139);
+  width: 100%;
+  height: 490px;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  background-image: url(../assets/images/banner-2.jpg);
+  background-size: 755px 375px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.catl-resg .catalogo {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  align-items: flex-end;
+}
+.catl-resg .catalogo p {
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  text-align: right;
+  text-decoration: rgb(119, 228, 212);
+  word-spacing: 2px;
+}
+.catl-resg .catalogo h3 {
+  width: 480px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  appearance: auto;
+  color: rgb(119, 228, 212);
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+  background-color: salmon;
+}
+.catl-resg .catalogo h3:hover {
+  background-color: rgb(119, 228, 212);
+  color: black;
+}
+.catl-resg .registrarme {
+  background-color: rgba(238, 211, 91, 0.959);
+  width: 80%;
+  height: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.catl-resg .registrarme li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.catl-resg .registrarme li a {
+  width: 370px;
+  height: 85px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  appearance: auto;
+  color: rgb(119, 228, 212);
+  font-size: 32px;
+  font-family: "Merriweather", serif;
+  background-color: salmon;
+}
+.catl-resg .registrarme li a:hover {
+  background-color: rgb(119, 228, 212);
+  color: black;
+}
+.catl-resg .registrarme li p {
+  font-family: "Merriweather", serif;
+  font-size: 35px;
+  word-spacing: 2px;
+}
+
+.main-class {
+  height: 1900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-class .seccion-accesorios {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+.main-class .seccion-accesorios div {
+  width: 100%;
+  height: 300px;
+  background-image: url(../assets/images/baner-accesorios.jpg);
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+}
+.main-class .seccion-accesorios div li h1 {
+  font-family: "Merriweather", serif;
+  font-size: 58px;
+  text-align: left;
+  list-style: none;
+}
+.main-class .seccion-accesorios-2 {
+  display: flex;
+  height: 1500px;
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
+  margin: 25px;
+}
+.main-class .seccion-accesorios-2 div {
+  display: grid;
+  grid-template-columns: repeat(3, 225px);
+  grid-template-rows: repeat(3, 290);
+  column-gap: 100px;
+  row-gap: 10px;
+  justify-content: center;
+}
+.main-class .seccion-accesorios-2 div li {
+  list-style: none;
+}
+.main-class .seccion-accesorios-2 div li img {
+  height: 190px;
+  width: 225px;
+}
+.main-class .seccion-accesorios-2 div li h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(110, 243, 139);
+  height: 98px;
+  width: 225px;
+  border: 1px solid black;
+}
+
+.main-class-2 {
+  height: 2600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-class-2 .seccion-belleza {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+.main-class-2 .seccion-belleza div {
+  width: 100%;
+  height: 300px;
+  background-image: url(../assets/images/carrusel.jpg);
+  background-size: 100% 270px;
+  background-repeat: no-repeat;
+}
+.main-class-2 .seccion-belleza div li h1 {
+  font-family: "Merriweather", serif;
+  font-size: 58px;
+  text-align: left;
+  list-style: none;
+}
+.main-class-2 .seccion-belleza-2 {
+  display: flex;
+  height: 2100px;
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
+  margin: 25px;
+}
+.main-class-2 .seccion-belleza-2 div {
+  display: grid;
+  grid-template-columns: repeat(3, 225px);
+  grid-template-rows: repeat(3, 290);
+  column-gap: 100px;
+  row-gap: 10px;
+  justify-content: center;
+}
+.main-class-2 .seccion-belleza-2 div li {
+  list-style: none;
+}
+.main-class-2 .seccion-belleza-2 div li img {
+  height: 190px;
+  width: 225px;
+}
+.main-class-2 .seccion-belleza-2 div li h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(110, 243, 139);
+  height: 98px;
+  width: 225px;
+  border: 1px solid black;
+}
+
+.main-class-1 {
+  height: 1900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-class-1 .seccion-manicuria {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+.main-class-1 .seccion-manicuria div {
+  width: 100%;
+  height: 300px;
+  background-image: url(../assets/images/banner-manicuria.jpg);
+  background-size: 100% 280px;
+  background-repeat: no-repeat;
+}
+.main-class-1 .seccion-manicuria div li h1 {
+  font-family: "Merriweather", serif;
+  font-size: 58px;
+  text-align: left;
+  list-style: none;
+}
+.main-class-1 .seccion-manicuria-2 {
+  display: flex;
+  height: 1500px;
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
+  margin: 25px;
+}
+.main-class-1 .seccion-manicuria-2 div {
+  display: grid;
+  grid-template-columns: repeat(3, 225px);
+  grid-template-rows: repeat(3, 290);
+  column-gap: 100px;
+  row-gap: 10px;
+  justify-content: center;
+}
+.main-class-1 .seccion-manicuria-2 div li {
+  list-style: none;
+}
+.main-class-1 .seccion-manicuria-2 div li img {
+  height: 190px;
+  width: 225px;
+}
+.main-class-1 .seccion-manicuria-2 div li h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(110, 243, 139);
+  height: 98px;
+  width: 225px;
+  border: 1px solid black;
+}
+
+.main-class-3 {
+  height: 650px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main-class-3 section div {
+  background-color: rgb(110, 243, 139);
+  width: 100%;
+  height: 200px;
+}
+.main-class-3 section div li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main-class-3 section div li h1 {
+  font-family: "Merriweather", serif;
+  font-size: 40px;
+}
+.main-class-3 section div li p {
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  word-spacing: 3px;
+}
+.main-class-3 .container-fluid {
+  padding: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(103, 65, 241);
+}
+footer div {
+  width: 100%;
+  padding: 30px;
+  margin-top: 50px;
+  font-size: 16px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer div li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer div li img {
+  height: 40px;
+  width: 40px;
+}
+footer div li h2, footer div li p {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+footer div li h2:hover, footer div li p:hover {
+  color: rgb(119, 228, 212);
+}
+
+@media (max-width: 1024px) {
+  header {
+    display: flex;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .carousel-item {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .carousel-item h2 {
+    font-size: 50px;
+  }
+  .carousel-item p {
+    font-size: 15px;
+    word-spacing: 2px;
+  }
+  .catl-resg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-image: url(../assets/images/banner-2.jpg);
+    background-size: 80% 300px;
+    background-position: top;
+  }
+  .catl-resg .catalogo p {
+    font-size: 25px;
+  }
+  .catl-resg .registrarme {
+    background-color: rgba(238, 211, 91, 0.959);
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .catl-resg .registrarme li p {
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 190px;
+    width: 100%;
+  }
+  header section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-image: url(../assets/images/banner-cir.png);
+    background-size: 150px 150px;
+    background-position: left;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header section div {
+    display: none;
+  }
+  header section nav {
+    display: flex;
+    width: 20%;
+    height: 150px;
+    align-items: center;
+  }
+  header section nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  header section nav ul li {
+    font-size: 17px;
+  }
+  .main-class {
+    height: 2600px;
+  }
+  .main-class .seccion-accesorios div {
+    height: 290px;
+  }
+  .main-class .seccion-accesorios div li h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .main-class .seccion-accesorios-2 {
+    height: 2350px;
+    margin: 0;
+  }
+  .main-class .seccion-accesorios-2 div {
+    grid-template-columns: repeat(2, 225px);
+  }
+  .main-class-2 {
+    height: 3400px;
+  }
+  .main-class-2 .seccion-belleza div {
+    height: 290px;
+  }
+  .main-class-2 .seccion-belleza div li h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .main-class-2 .seccion-belleza-2 {
+    height: 3100px;
+    margin: 0;
+  }
+  .main-class-2 .seccion-belleza-2 div {
+    grid-template-columns: repeat(2, 225px);
+  }
+  .main-class-1 {
+    height: 2300px;
+  }
+  .main-class-1 .seccion-manicuria div {
+    height: 290px;
+  }
+  .main-class-1 .seccion-manicuria div li h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .main-class-1 .seccion-manicuria-2 {
+    height: 2000px;
+    margin: 0;
+  }
+  .main-class-1 .seccion-manicuria-2 div {
+    grid-template-columns: repeat(2, 225px);
+  }
+  .main-class-3 section div {
+    display: flex;
+    justify-content: center;
+  }
+  .main-class-3 section div li p {
+    font-size: 20px;
+  }
+  .main-class-3 section div li h1 {
+    font-size: 25px;
+  }
+  footer {
+    height: 230px;
+  }
+  footer div {
+    padding: 25px 2px 0px 2px;
+    margin-top: 5px;
+  }
+  footer div li img {
+    height: 29px;
+    width: 29px;
+  }
+  footer div li h2, footer div li p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    height: 200px;
+  }
+  .encabezado {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgb(103, 65, 241);
+    background-image: url(../assets/images/banner.jpg);
+    background-size: initial;
+    background-position-y: top;
+    width: 100%;
+    height: 200px;
+  }
+  .contenedor-img {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar li {
+    display: flex;
+    flex-direction: row;
+    font-size: 21px;
+    font-weight: bold;
+    word-spacing: 2px;
+  }
+  .navbar li a:hover {
+    color: rgb(119, 228, 212);
+  }
+  .carousel-item h2 {
+    font-size: 20px;
+  }
+  .carousel-item p {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

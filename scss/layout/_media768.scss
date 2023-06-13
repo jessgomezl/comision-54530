@@ -1,0 +1,115 @@
+@media (max-width:768px){
+    header{
+        height: 190px;
+        width: 100%;
+        section{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            background-image: url( ../assets/images/banner-cir.png);
+            background-size: 150px 150px;
+            background-position: left;
+            justify-content: flex-end;
+            align-items: center;
+            div{
+                display: none;
+            }
+            nav {
+                display: flex;
+                width: 20%;
+                height: 150px;
+                align-items: center;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: 10px;
+                    li{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+    .main-class{
+        height: 2600px;
+        .seccion-accesorios div{
+            height: 290px;
+            li h1{
+                font-size: 25px;
+                text-align: center;
+            }
+        }
+        .seccion-accesorios-2{
+            height: 2350px;
+            margin: 0;
+            div{
+                grid-template-columns: repeat(2, 225px);
+            }
+        }
+    }
+    .main-class-2{
+        height: 3400px ;
+        .seccion-belleza div{
+            height: 290px;
+            li h1{
+                font-size: 25px;
+                text-align: center;
+            }
+        }
+        .seccion-belleza-2{
+            height: 3100px;
+            margin: 0;
+            div{
+                grid-template-columns: repeat(2, 225px);
+            }
+        }
+    }
+    .main-class-1{
+        height: 2300px;
+        .seccion-manicuria div{
+            height: 290px;
+            li h1{
+                font-size: 25px;
+                text-align: center;
+            }
+        }
+        .seccion-manicuria-2{
+            height: 2000px;
+            margin: 0;
+            div{
+                grid-template-columns: repeat(2, 225px);
+            }
+        }
+    }
+    .main-class-3{
+        section div{
+            display: flex;
+            justify-content: center;
+            li{
+                p{
+                    font-size: 20px;
+                }
+                h1{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    footer{
+        height: 230px;
+        div{
+            padding: 25px 2px 0px 2px;
+            margin-top: 5px;
+            li{
+                img{
+                    height: 29px;
+                    width: 29px;
+                }
+                h2,p{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

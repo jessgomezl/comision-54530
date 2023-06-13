@@ -4,25 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registrarme</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="Registrate en nuetra tienda">
+    <meta name="keywords" content="">
+    <title>Registrarse | VICKYS</title>
+    <link rel="shortcut icon" href="../assets/images/banner-modified.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <section class="encabezado">
+        <section>
             <div>
-                <img src="../assets/images/Search.png" alt="" class="buscador">
-                <img src="../assets/images/Customer.png" alt="" class="inicio"> 
-                <img src="../assets/images/Shopping Cart.png" alt="" class="carrito"> 
+                <img src="../assets/images/Search.png" alt="">
+                <img src="../assets/images/Customer.png" alt=""> 
+                <img src="../assets/images/Shopping Cart.png" alt=""> 
             </div>
             <nav>
-                <ul class="navbar">
-                        <li> <a href="../pages/accesorios.html">ACCESORIOS</a>
-                        <li> <a href="../pages/belleza.html">BELLEZA</a></li>
-                        <li> <a href="../pages/manicuria.html">MANICURIA</a></li>
-                        <li> <a href="../pages/registrarme.html">INGRESAR</a></li>
+                <ul>
+                    <li> 
+                        <a href="../pages/accesorios.html">ACCESORIOS</a>
+                    </li>
+                    <li> 
+                        <a href="../pages/belleza.html">BELLEZA</a>
+                    </li>
+                    <li> 
+                        <a href="../pages/manicuria.html">MANICURIA</a>
+                    </li>
+                    <li> 
+                        <a href="../pages/registrarme.html">REGISTRARME</a>
+                    </li>
                 </ul>
             </nav>
         </section>
@@ -36,47 +46,49 @@
                 </li>
             </div>
         </section>
-            <div class="contenedor-nombre">
-                <label for="nombres">Nombre/s:</label>
-                <input type="text" name="" id="Nombre">
-                <label for="apellido">Apellido/s:</label>
-                <input type="text" name="" id="Apellido">
-            </div>
-            <div class="contenedor-email">
-                <label for="email">E-mail:</label>
-                <input type="email" name="" id="email">
-                <label for="comfirmar email">Confirmar e-mail:</label>
-                <input type="email" name="" id="confirmar email">
-            </div>
-            <div class="contenedor-contra">
-                <label for="contraseña">Contraseña:</label>
-                <input type="password" name="" id="contraseña">
-                <label for="confirmar contraseña">Confirmar contraseña:</label>
-                <input type="password" name="" id="confirmar contraseña">
-            </div>
-            <div class="reg-but">
-                <li class="but-regristrarse">
-                    <button>REGISTRARSE</button>
-                </li>
+        <form class="container-fluid">
+            <div class="d-flex flex-column gap-2 max-auto">
+                <div class="d-flex flex-column col-lg-4 col-md-8">
+                <label for="exampleInputName" class="form-label"> Nombre/s: <abbr class="required" title="campo obligatorio"></abbr></label>
+                <input type="text" class="form-control" value required>
+                </div>
+                <div class="d-flex flex-column col-lg-4 col-md-8">
+                <label for="exampleInput" class="form-label">Apellido/s: <abbr class="required" title="campo obligatorio"></abbr></label>
+                <input type="text" class="form-control" value required>
+                </div>
+                <div class="d-flex flex-column col-lg-4 col-md-8">
+                <label for="exampleInputEmail1" class="form-label">E-mail:<abbr class="required" title="campo obligatorio"></abbr></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="d-flex flex-column col-lg-4 col-md-8">
+                <label for="exampleInputPassword1" class="form-label">Contraseña:<abbr class="required" title="campo obligatorio"></abbr></label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="pb-2 justify-content-center">
+                <button type="submit" class="boton-vicky">Registrarse en vickys</button>
+                </div>
             </div>
         </form>
     </main>
     <footer>
         <section>
-            <div class="footer" >
+            <div>
                 <li>
                     <h2>SEGUINOS</h2>
-                    <img class="facebook" src="../assets/images/icons8-facebook.png" alt="">
-                    <img class="instagram" src="../assets/images/icons8-instagram.png" alt="">
+                    <img src="../assets/images/icons8-facebook.png" alt="">
+                    <img src="../assets/images/icons8-instagram.png" alt="">
                 </li>
                 <li>
                     <h2>CONTACTANOS</h2>
-                    <img class="whatsapp" src="../assets/images/icons8-whatsapp.png" alt=""><p> 011-61921393</p>
-                    <img class="email" src="../assets/images/icons8-email.png" alt=""><p>vickysregaleria@gmail.com</p>
+                    <img src="../assets/images/icons8-whatsapp.png" alt="">
+                    <p> 011-61921393</p>
+                    <img src="../assets/images/icons8-email.png" alt="">
+                    <p>vickysregaleria@gmail.com</p>
                 </li>
             </div>
         </section>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 </body>
 </html>

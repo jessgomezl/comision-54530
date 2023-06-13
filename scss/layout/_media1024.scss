@@ -1,0 +1,50 @@
+@media (max-width:1024px){
+  header{
+    display: flex;
+    nav{
+      display: flex;
+      justify-content: space-between;
+      ul li{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+  }
+  .carousel-item{
+    margin-left: 4%;
+    margin-right: 4%;
+    h2{
+      font-size: 50px;
+      }
+    p{
+      font-size: 15px;
+      word-spacing: 2px;
+      }
+  }
+    .catl-resg{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: stretch;
+      justify-content: space-around;
+      align-items: flex-end;
+      background-image: url(../assets/images/banner-2.jpg);
+      background-size: 80% 300px;
+      background-position: top;
+      .catalogo p{
+        font-size: 25px;
+      }
+      .registrarme{
+        background-color: rgba(238, 211, 91, 0.959);
+        width: 80%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li p{
+          font-size: 25px;
+        }
+      }
+    }
+}

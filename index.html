@@ -4,63 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vickys</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <meta name="description" content="Tienda de articulos de belleza, cuidado personal y todos los accesorios que necesites al mejor precio">
+    <meta name="keywords" content="productos de belleza, accesorios para mujer, productos de cuidado personal">
+    <title>Inicio | VICKYS</title>
+    <link rel="shortcut icon" href="./assets/images/banner-modified.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <section class="encabezado" >
-            <div class="contenedor-img">
-                <img src="./assets/images/Search.png" alt="" class="buscador">
-                <img src="./assets/images/Customer.png" alt="" class="inicio"> 
-                <img src="./assets/images/Shopping Cart.png" alt="" class="carrito"> 
+        <section>
+            <div>
+                <img src="./assets/images/Search.png" alt="">
+                <img src="./assets/images/Customer.png" alt=""> 
+                <img src="./assets/images/Shopping Cart.png" alt=""> 
             </div>
             <nav>
-                <ul class="navbar">
-                    <li> <a href="./pages/accesorios.html">ACCESORIOS</a>
-                    <li> <a href="./pages/belleza.html">BELLEZA</a></li>
-                    <li> <a href="./pages/manicuria.html">MANICURIA</a></li>
-                    <li> <a href="./pages/registrarme.html">INGRESAR</a></li>
+                <ul>
+                    <li> 
+                        <a href="./pages/accesorios.html">ACCESORIOS</a>
+                    </li>
+                    <li> 
+                        <a href="./pages/belleza.html">BELLEZA</a>
+                    </li>
+                    <li> 
+                        <a href="./pages/manicuria.html">MANICURIA</a>
+                    </li>
+                    <li> 
+                        <a href="./pages/registrarme.html">INGRESAR</a>
+                    </li>
                 </ul>
             </nav>
         </section>
     </header>
     <main>
-        <section > 
-            <div class="belleza-item">
-                <h2>BELLEZA</h2>
-                <p> CONOCE TODOS LOS ACCESORIOS DE BELLEZA PROFESIONAL QUE NECESITES EN UN SOLO LUGAR</p>
+        <section> 
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/images/carrusel.jpg" alt="">
+                        <h2> BELLEZA</h2>
+                        <p>CONOCE TODOS LOS PRODUCTOS DE BELLEZA PROFESIONAL QUE NECESITES EN UN SOLO LUGAR</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/baner-accesorios.jpg"  alt="">
+                        <h2> ACCESORIOS</h2>
+                        <p>CONOCE TODOS LOS ACCESORIOS DE BELLEZA PROFESIONAL QUE NECESITES EN UN SOLO LUGAR</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/banner-manicuria.jpg"  alt="">
+                        <h2> MANICURIA</h2>
+                        <p>CONOCE TODOS LOS ACCESORIOS DE BELLEZA PROFESIONAL QUE NECESITES EN UN SOLO LUGAR</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
         <section class="catl-resg">
             <div class="catalogo">
-                <P>MIRA TODOS NUESTROS PRODUCTOS</P>
-                <button>VER CATALOGO COMPLETO</button>
+                <p>MIRA TODOS NUESTROS PRODUCTOS</p>
+                <h3>VER CATALOGO COMPLETO</h3>
             </div>
             <div class="registrarme"> 
-                <li class="lista-registrarme">
-                    <button>REGISTRARME <a href="./pages/registrarme.html"></a></button>
-                    <P>¡REGISTRATE Y COMPRA MAS RAPIDO!</P>
+                <li>
+                    <a href="./pages/registrarme.html">REGISTRARME</a>
+                    <p>¡REGISTRATE Y COMPRA MAS RAPIDO!</p>
                 </li>
             </div>
         </section>
     </main>
     <footer>
-        <div class="footer">
+        <div>
             <li>
                 <h2>SEGUINOS</h2>
-                <img class="facebook" src="./assets/images/icons8-facebook.png" alt="">
-                <img class="instagram" src="./assets/images/icons8-instagram.png" alt="">
+                <img src="./assets/images/icons8-facebook.png" alt="">
+                <img src="./assets/images/icons8-instagram.png" alt="">
             </li>
             <li>
                 <h2>CONTACTANOS</h2>
-                <img class="whatsapp" src="./assets/images/icons8-whatsapp.png" alt=""><p> 011-61921393</p>
-                <img class="email" src="./assets/images/icons8-email.png" alt=""><p>vickysregaleria@gmail.com</p>
+                <img src="./assets/images/icons8-whatsapp.png" alt="">
+                <p> 011-61921393</p>
+                <img src="./assets/images/icons8-email.png" alt="">
+                <p>vickysregaleria@gmail.com</p>
             </li>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 </body>
 </html>
