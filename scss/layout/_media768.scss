@@ -1,24 +1,30 @@
 @media (max-width:768px){
     header{
         height: 190px;
-        width: 100%;
         section{
             width: 100%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             background-image: url( ../assets/images/banner-cir.png);
             background-size: 150px 150px;
-            background-position: left;
-            justify-content: flex-end;
-            align-items: center;
+            background-position: 10% 50%;
+            justify-content: center;
+            align-items: flex-end;
             div{
-                display: none;
+                margin-right: 10px;
+                a{
+                    img{
+                        width: 29px;
+                        height: 29px;
+                    }
+                }
             }
-            nav {
+            nav{
                 display: flex;
                 width: 20%;
                 height: 150px;
                 align-items: center;
+                margin-right: 10px;
                 ul{
                     display: flex;
                     flex-direction: column;
@@ -27,6 +33,53 @@
                     li{
                         font-size: 17px;
                     }
+                }
+            }
+        }
+    }
+    .carousel-item{
+        img{
+            height: 400px;
+        }
+        h2{
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        p{
+            font-size: 14px;
+            word-spacing: 1px;
+        }
+    }
+    .catl-resg{
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        background-size: 80% 300px;
+        background-position: top;
+        .catalogo{
+            p{
+                font-size: 22px;
+                text-align: right;
+                word-spacing: 1px;
+            }
+            h3{
+                width: 390px;
+                font-size: 25px;
+            }
+        }
+        .registrarme{
+            height: 190px;
+            li{
+                a{
+                    width: 80%;
+                    height: 85px;
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 25px;
+                    word-spacing: 2px;
                 }
             }
         }
@@ -42,9 +95,15 @@
         }
         .seccion-accesorios-2{
             height: 2350px;
-            margin: 0;
-            div{
+            .productos{
+                display: flex;
+                h2{
+                    font-size: 22px;
+                }
+            }
+            .productos-2{
                 grid-template-columns: repeat(2, 225px);
+                column-gap: 5px;
             }
         }
     }
@@ -60,8 +119,16 @@
         .seccion-belleza-2{
             height: 3100px;
             margin: 0;
-            div{
+            padding: 0;
+            .productos{
+                display: flex;
+                h2{
+                    font-size: 22px;
+                }
+            }
+            .productos-2{
                 grid-template-columns: repeat(2, 225px);
+                column-gap: 5px;
             }
         }
     }
@@ -77,8 +144,16 @@
         .seccion-manicuria-2{
             height: 2000px;
             margin: 0;
-            div{
+            padding: 0;
+            .productos{
+                display: flex;
+                h2{
+                    font-size: 22px;
+                }
+            }
+            .productos-2{
                 grid-template-columns: repeat(2, 225px);
+                column-gap: 5px;
             }
         }
     }
@@ -97,7 +172,7 @@
         }
     }
     footer{
-        height: 230px;
+        height: 200px;
         div{
             padding: 25px 2px 0px 2px;
             margin-top: 5px;

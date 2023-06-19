@@ -1,50 +1,152 @@
 @media (max-width:1024px){
-  header{
-    display: flex;
-    nav{
-      display: flex;
-      justify-content: space-between;
-      ul li{
+    header{
+        display: flex;
+        nav{
+            display: flex;
+            justify-content: space-between;
+            ul li{
+                display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+            }
+        }
+    }
+    .carousel-item{
+        margin-left: 4%;
+        margin-right: 4%;
+        img{
+            height: 500px;
+        }
+        h2{
+            font-size: 42px;
+        }
+        p{
+            font-size: 15px;
+            word-spacing: 2px;
+        }
+    }
+    .catl-resg{
+        height: 590px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        align-content: stretch;
         justify-content: space-around;
-      }
-    }
-  }
-  .carousel-item{
-    margin-left: 4%;
-    margin-right: 4%;
-    h2{
-      font-size: 50px;
-      }
-    p{
-      font-size: 15px;
-      word-spacing: 2px;
-      }
-  }
-    .catl-resg{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-content: stretch;
-      justify-content: space-around;
-      align-items: flex-end;
-      background-image: url(../assets/images/banner-2.jpg);
-      background-size: 80% 300px;
-      background-position: top;
-      .catalogo p{
-        font-size: 25px;
-      }
-      .registrarme{
-        background-color: rgba(238, 211, 91, 0.959);
-        width: 80%;
-        height: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        li p{
-          font-size: 25px;
+        align-items: flex-end;
+        background-image: url(../assets/images/banner-2.jpg);
+        background-size: 80% 300px;
+        background-position: top;
+        .catalogo p{
+            font-size: 25px;
         }
-      }
+        .registrarme{
+            background-color: rgba(238, 211, 91, 0.959);
+            width: 80%;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li p{
+                font-size: 25px;
+            }
+        }
+    }
+    .main-class{
+        height: 2600px;
+        .seccion-accesorios div{
+            height: 290px;
+            li h1{
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+        .seccion-accesorios-2{
+            height: 2350px;
+            .productos{
+                display: flex;
+                h2{
+                    font-size: 25px;
+                }
+            }
+            .productos-2{
+                grid-template-columns: repeat(2, 225px);
+            }
+        }
+    }
+    .main-class-2{
+        height: 3400px ;
+        .seccion-belleza div{
+            height: 290px;
+            li h1{
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+        .seccion-belleza-2{
+            height: 3100px;
+            margin: 0;
+            .productos{
+                display: flex;
+                h2{
+                    font-size: 25px;
+                }
+                }
+            .productos-2{
+                grid-template-columns: repeat(2, 225px);
+            }
+        }
+    }
+    .main-class-1{
+        height: 2300px;
+        .seccion-manicuria div{
+            height: 290px;
+            li h1{
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+        .seccion-manicuria-2{
+            height: 2000px;
+            margin: 0;
+            .productos{
+                display: flex;
+                h2{
+                    font-size: 25px;
+                }
+            }
+            .productos-2{
+                grid-template-columns: repeat(2, 225px);
+            }
+        }
+    }
+    .main-class-3{
+        section div{
+            display: flex;
+            justify-content: center;
+            li{
+                p{
+                    font-size: 20px;
+                }
+                h1{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    footer{
+    height: 230px;
+        div{
+            padding: 25px 2px 0px 2px;
+            margin-top: 5px;
+            li{
+                img{
+                    height: 29px;
+                    width: 29px;
+                }
+                h2,p{
+                    font-size: 17px;
+                }
+            }
+        }
     }
 }

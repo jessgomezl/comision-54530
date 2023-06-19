@@ -59,13 +59,19 @@ header section {
   background-repeat: no-repeat;
   background-position: 0px 80px;
 }
-header section div {
-  display: flex;
-  flex-direction: row;
-}
-header section div img {
+header section div a img {
   width: 40px;
   height: 40px;
+}
+header section .checkbtn {
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+header section #check {
+  display: none;
 }
 header section nav {
   background-color: rgb(103, 65, 241);
@@ -117,7 +123,7 @@ header section nav ul li a:hover {
 .carousel-item p {
   font-family: "Merriweather", serif;
   font-size: 25px;
-  word-spacing: 3%;
+  word-spacing: 3px;
 }
 
 .catl-resg {
@@ -134,7 +140,7 @@ header section nav ul li a:hover {
   background-image: url(../assets/images/banner-2.jpg);
   background-size: 755px 375px;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 10% 50%;
 }
 .catl-resg .catalogo {
   display: flex;
@@ -210,16 +216,16 @@ header section nav ul li a:hover {
   align-items: center;
 }
 .main-class .seccion-accesorios {
-  width: 100%;
   height: 320px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   list-style: none;
 }
 .main-class .seccion-accesorios div {
-  width: 100%;
   height: 300px;
+  width: 100%;
   background-image: url(../assets/images/baner-accesorios.jpg);
   background-size: 100% 300px;
   background-repeat: no-repeat;
@@ -234,11 +240,41 @@ header section nav ul li a:hover {
   display: flex;
   height: 1500px;
   width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 10px;
   margin: 25px;
 }
-.main-class .seccion-accesorios-2 div {
+.main-class .seccion-accesorios-2 .productos {
+  background-color: rgb(218, 55, 109);
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  height: 50px;
+  width: 250px;
+  transition: width 2s, height 5s;
+}
+.main-class .seccion-accesorios-2 .productos:hover {
+  height: 250px;
+  width: 252px;
+}
+.main-class .seccion-accesorios-2 .productos h2 {
+  font-family: "Merriweather", serif;
+  font-size: 35px;
+}
+.main-class .seccion-accesorios-2 .productos h2:hover {
+  color: rgb(103, 65, 241);
+  text-decoration: overline;
+}
+.main-class .seccion-accesorios-2 .productos h3 {
+  font-family: "Merriweather", serif;
+  font-size: 17px;
+  gap: 10px;
+}
+.main-class .seccion-accesorios-2 .productos h3:hover {
+  color: rgb(103, 65, 241);
+  text-decoration: underline;
+}
+.main-class .seccion-accesorios-2 .productos-2 {
   display: grid;
   grid-template-columns: repeat(3, 225px);
   grid-template-rows: repeat(3, 290);
@@ -246,14 +282,14 @@ header section nav ul li a:hover {
   row-gap: 10px;
   justify-content: center;
 }
-.main-class .seccion-accesorios-2 div li {
+.main-class .seccion-accesorios-2 .productos-2 li {
   list-style: none;
 }
-.main-class .seccion-accesorios-2 div li img {
+.main-class .seccion-accesorios-2 .productos-2 li img {
   height: 190px;
   width: 225px;
 }
-.main-class .seccion-accesorios-2 div li h2 {
+.main-class .seccion-accesorios-2 .productos-2 li h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -298,11 +334,41 @@ header section nav ul li a:hover {
   display: flex;
   height: 2100px;
   width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 10px;
   margin: 25px;
 }
-.main-class-2 .seccion-belleza-2 div {
+.main-class-2 .seccion-belleza-2 .productos {
+  background-color: rgb(248, 209, 183);
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 250px;
+  height: 50px;
+  transition: width 2s, height 5s;
+}
+.main-class-2 .seccion-belleza-2 .productos:hover {
+  width: 252px;
+  height: 250px;
+}
+.main-class-2 .seccion-belleza-2 .productos h2 {
+  font-family: "Merriweather", serif;
+  font-size: 40px;
+}
+.main-class-2 .seccion-belleza-2 .productos h2:hover {
+  color: rgb(103, 65, 241);
+  text-decoration: overline;
+}
+.main-class-2 .seccion-belleza-2 .productos h3 {
+  font-family: "Merriweather", serif;
+  font-size: 17px;
+  gap: 10px;
+}
+.main-class-2 .seccion-belleza-2 .productos h3:hover {
+  color: rgb(103, 65, 241);
+  text-decoration: underline;
+}
+.main-class-2 .seccion-belleza-2 .productos-2 {
   display: grid;
   grid-template-columns: repeat(3, 225px);
   grid-template-rows: repeat(3, 290);
@@ -310,14 +376,14 @@ header section nav ul li a:hover {
   row-gap: 10px;
   justify-content: center;
 }
-.main-class-2 .seccion-belleza-2 div li {
+.main-class-2 .seccion-belleza-2 .productos-2 li {
   list-style: none;
 }
-.main-class-2 .seccion-belleza-2 div li img {
+.main-class-2 .seccion-belleza-2 .productos-2 li img {
   height: 190px;
   width: 225px;
 }
-.main-class-2 .seccion-belleza-2 div li h2 {
+.main-class-2 .seccion-belleza-2 .productos-2 li h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -362,11 +428,41 @@ header section nav ul li a:hover {
   display: flex;
   height: 1500px;
   width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 10px;
   margin: 25px;
 }
-.main-class-1 .seccion-manicuria-2 div {
+.main-class-1 .seccion-manicuria-2 .productos {
+  background-color: rgb(20, 236, 20);
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 250px;
+  height: 50px;
+  transition: width 2s, height 5s;
+}
+.main-class-1 .seccion-manicuria-2 .productos:hover {
+  width: 252px;
+  height: 250px;
+}
+.main-class-1 .seccion-manicuria-2 .productos h2 {
+  font-family: "Merriweather", serif;
+  font-size: 40px;
+}
+.main-class-1 .seccion-manicuria-2 .productos h2:hover {
+  color: rgb(103, 65, 241);
+  text-decoration: overline;
+}
+.main-class-1 .seccion-manicuria-2 .productos h3 {
+  font-family: "Merriweather", serif;
+  font-size: 17px;
+  gap: 10px;
+}
+.main-class-1 .seccion-manicuria-2 .productos h3:hover {
+  color: rgb(103, 65, 241);
+  text-decoration: underline;
+}
+.main-class-1 .seccion-manicuria-2 .productos-2 {
   display: grid;
   grid-template-columns: repeat(3, 225px);
   grid-template-rows: repeat(3, 290);
@@ -374,14 +470,14 @@ header section nav ul li a:hover {
   row-gap: 10px;
   justify-content: center;
 }
-.main-class-1 .seccion-manicuria-2 div li {
+.main-class-1 .seccion-manicuria-2 .productos-2 li {
   list-style: none;
 }
-.main-class-1 .seccion-manicuria-2 div li img {
+.main-class-1 .seccion-manicuria-2 .productos-2 li img {
   height: 190px;
   width: 225px;
 }
-.main-class-1 .seccion-manicuria-2 div li h2 {
+.main-class-1 .seccion-manicuria-2 .productos-2 li h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -449,7 +545,7 @@ footer div li img {
 }
 footer div li h2, footer div li p {
   font-family: "Merriweather", serif;
-  font-size: 20px;
+  font-size: 21px;
   text-decoration: none;
 }
 footer div li h2:hover, footer div li p:hover {
@@ -473,14 +569,18 @@ footer div li h2:hover, footer div li p:hover {
     margin-left: 4%;
     margin-right: 4%;
   }
+  .carousel-item img {
+    height: 500px;
+  }
   .carousel-item h2 {
-    font-size: 50px;
+    font-size: 42px;
   }
   .carousel-item p {
     font-size: 15px;
     word-spacing: 2px;
   }
   .catl-resg {
+    height: 590px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -505,40 +605,6 @@ footer div li h2:hover, footer div li p:hover {
   .catl-resg .registrarme li p {
     font-size: 25px;
   }
-}
-@media (max-width: 768px) {
-  header {
-    height: 190px;
-    width: 100%;
-  }
-  header section {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    background-image: url(../assets/images/banner-cir.png);
-    background-size: 150px 150px;
-    background-position: left;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  header section div {
-    display: none;
-  }
-  header section nav {
-    display: flex;
-    width: 20%;
-    height: 150px;
-    align-items: center;
-  }
-  header section nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 10px;
-  }
-  header section nav ul li {
-    font-size: 17px;
-  }
   .main-class {
     height: 2600px;
   }
@@ -546,14 +612,19 @@ footer div li h2:hover, footer div li p:hover {
     height: 290px;
   }
   .main-class .seccion-accesorios div li h1 {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
   }
   .main-class .seccion-accesorios-2 {
     height: 2350px;
-    margin: 0;
   }
-  .main-class .seccion-accesorios-2 div {
+  .main-class .seccion-accesorios-2 .productos {
+    display: flex;
+  }
+  .main-class .seccion-accesorios-2 .productos h2 {
+    font-size: 25px;
+  }
+  .main-class .seccion-accesorios-2 .productos-2 {
     grid-template-columns: repeat(2, 225px);
   }
   .main-class-2 {
@@ -563,14 +634,20 @@ footer div li h2:hover, footer div li p:hover {
     height: 290px;
   }
   .main-class-2 .seccion-belleza div li h1 {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
   }
   .main-class-2 .seccion-belleza-2 {
     height: 3100px;
     margin: 0;
   }
-  .main-class-2 .seccion-belleza-2 div {
+  .main-class-2 .seccion-belleza-2 .productos {
+    display: flex;
+  }
+  .main-class-2 .seccion-belleza-2 .productos h2 {
+    font-size: 25px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos-2 {
     grid-template-columns: repeat(2, 225px);
   }
   .main-class-1 {
@@ -580,14 +657,20 @@ footer div li h2:hover, footer div li p:hover {
     height: 290px;
   }
   .main-class-1 .seccion-manicuria div li h1 {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
   }
   .main-class-1 .seccion-manicuria-2 {
     height: 2000px;
     margin: 0;
   }
-  .main-class-1 .seccion-manicuria-2 div {
+  .main-class-1 .seccion-manicuria-2 .productos {
+    display: flex;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos h2 {
+    font-size: 25px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos-2 {
     grid-template-columns: repeat(2, 225px);
   }
   .main-class-3 section div {
@@ -598,7 +681,7 @@ footer div li h2:hover, footer div li p:hover {
     font-size: 20px;
   }
   .main-class-3 section div li h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
   footer {
     height: 230px;
@@ -615,49 +698,1032 @@ footer div li h2:hover, footer div li p:hover {
     font-size: 17px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   header {
-    height: 200px;
+    height: 190px;
   }
-  .encabezado {
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: rgb(103, 65, 241);
-    background-image: url(../assets/images/banner.jpg);
-    background-size: initial;
-    background-position-y: top;
+  header section {
     width: 100%;
-    height: 200px;
-  }
-  .contenedor-img {
-    display: none;
-  }
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-  }
-  .navbar {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    background-image: url(../assets/images/banner-cir.png);
+    background-size: 150px 150px;
+    background-position: 10% 50%;
     justify-content: center;
+    align-items: flex-end;
   }
-  .navbar li {
+  header section div {
+    margin-right: 10px;
+  }
+  header section div a img {
+    width: 29px;
+    height: 29px;
+  }
+  header section nav {
     display: flex;
-    flex-direction: row;
-    font-size: 21px;
-    font-weight: bold;
-    word-spacing: 2px;
+    width: 20%;
+    height: 150px;
+    align-items: center;
+    margin-right: 10px;
   }
-  .navbar li a:hover {
-    color: rgb(119, 228, 212);
+  header section nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  header section nav ul li {
+    font-size: 17px;
+  }
+  .carousel-item img {
+    height: 400px;
   }
   .carousel-item h2 {
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: bolder;
   }
   .carousel-item p {
+    font-size: 14px;
+    word-spacing: 1px;
+  }
+  .catl-resg {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    background-size: 80% 300px;
+    background-position: top;
+  }
+  .catl-resg .catalogo p {
+    font-size: 22px;
+    text-align: right;
+    word-spacing: 1px;
+  }
+  .catl-resg .catalogo h3 {
+    width: 390px;
+    font-size: 25px;
+  }
+  .catl-resg .registrarme {
+    height: 190px;
+  }
+  .catl-resg .registrarme li a {
+    width: 80%;
+    height: 85px;
+    font-size: 25px;
+  }
+  .catl-resg .registrarme li p {
+    font-size: 25px;
+    word-spacing: 2px;
+  }
+  .main-class {
+    height: 2600px;
+  }
+  .main-class .seccion-accesorios div {
+    height: 290px;
+  }
+  .main-class .seccion-accesorios div li h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .main-class .seccion-accesorios-2 {
+    height: 2350px;
+  }
+  .main-class .seccion-accesorios-2 .productos {
+    display: flex;
+  }
+  .main-class .seccion-accesorios-2 .productos h2 {
+    font-size: 22px;
+  }
+  .main-class .seccion-accesorios-2 .productos-2 {
+    grid-template-columns: repeat(2, 225px);
+    column-gap: 5px;
+  }
+  .main-class-2 {
+    height: 3400px;
+  }
+  .main-class-2 .seccion-belleza div {
+    height: 290px;
+  }
+  .main-class-2 .seccion-belleza div li h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .main-class-2 .seccion-belleza-2 {
+    height: 3100px;
+    margin: 0;
+    padding: 0;
+  }
+  .main-class-2 .seccion-belleza-2 .productos {
+    display: flex;
+  }
+  .main-class-2 .seccion-belleza-2 .productos h2 {
+    font-size: 22px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos-2 {
+    grid-template-columns: repeat(2, 225px);
+    column-gap: 5px;
+  }
+  .main-class-1 {
+    height: 2300px;
+  }
+  .main-class-1 .seccion-manicuria div {
+    height: 290px;
+  }
+  .main-class-1 .seccion-manicuria div li h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .main-class-1 .seccion-manicuria-2 {
+    height: 2000px;
+    margin: 0;
+    padding: 0;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos {
+    display: flex;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos h2 {
+    font-size: 22px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos-2 {
+    grid-template-columns: repeat(2, 225px);
+    column-gap: 5px;
+  }
+  .main-class-3 section div {
+    display: flex;
+    justify-content: center;
+  }
+  .main-class-3 section div li p {
+    font-size: 20px;
+  }
+  .main-class-3 section div li h1 {
+    font-size: 25px;
+  }
+  footer {
+    height: 200px;
+  }
+  footer div {
+    padding: 25px 2px 0px 2px;
+    margin-top: 5px;
+  }
+  footer div li img {
+    height: 29px;
+    width: 29px;
+  }
+  footer div li h2, footer div li p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 425px) {
+  header {
+    height: 150px;
+  }
+  header section {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(103, 65, 241);
+    background-image: url(../assets/images/banner-cir.png);
+    background-size: 100px 100px;
+    background-position: 10% 50%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 150px;
+  }
+  header section div {
+    gap: 10px;
+  }
+  header section div a img {
+    width: 25px;
+    height: 25px;
+  }
+  header section nav {
+    background-color: rgb(103, 65, 241);
+    justify-content: space-around;
+  }
+  header section nav .checkbtn {
+    display: block;
+  }
+  header section nav ul {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 500px;
+    background-color: rgb(103, 65, 241);
+    top: 50px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  header section nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  header section nav ul li a {
+    font-size: 20px;
+  }
+  header section nav #check:checked ~ ul {
+    left: 0;
+  }
+  .carousel-item img {
+    height: 300px;
+  }
+  .carousel-item h2 {
+    font-size: 22px;
+    font-weight: bolder;
+  }
+  .carousel-item p {
+    font-size: 12px;
+    word-spacing: 1px;
+  }
+  .catl-resg {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-size: 80% 190px;
+    background-position: top;
+    gap: 100px;
+  }
+  .catl-resg .catalogo p {
+    font-size: 11px;
+    text-align: right;
+    word-spacing: 1px;
+  }
+  .catl-resg .catalogo h3 {
+    text-align: center;
+    width: 150px;
+    height: 50px;
     font-size: 15px;
+  }
+  .catl-resg .registrarme {
+    height: 170px;
+  }
+  .catl-resg .registrarme li a {
+    width: 70%;
+    height: 50px;
+    font-size: 19px;
+  }
+  .catl-resg .registrarme li p {
+    font-size: 12px;
+    word-spacing: 1px;
+  }
+  .main-class {
+    height: 2900px;
+  }
+  .main-class .seccion-accesorios {
+    height: 260px;
+  }
+  .main-class .seccion-accesorios div {
+    height: 260px;
+    background-size: 90% 250px;
+    background-position: center;
+  }
+  .main-class .seccion-accesorios div li h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .main-class .seccion-accesorios-2 {
+    height: 2690px;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 5px;
+  }
+  .main-class .seccion-accesorios-2 .productos {
+    display: flex;
+    gap: 2px;
+    width: 90px;
+    height: 50px;
+    transition: width 2s, height 3s;
+  }
+  .main-class .seccion-accesorios-2 .productos:hover {
+    width: 95px;
+    height: 190px;
+  }
+  .main-class .seccion-accesorios-2 .productos h2, .main-class .seccion-accesorios-2 .productos h3 {
+    font-size: 15px;
+  }
+  .main-class .seccion-accesorios-2 .productos-2 {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+  }
+  .main-class .seccion-accesorios-2 .productos-2 li img {
+    width: 150px;
+    height: 150px;
+  }
+  .main-class .seccion-accesorios-2 .productos-2 li h2 {
+    font-size: 10px;
+    height: 50px;
+    width: 150px;
+  }
+  .main-class .seccion-accesorios-2 .productos-2 li button {
+    font-size: 12px;
+    width: 150px;
+  }
+  .main-class-2 {
+    height: 4050px;
+  }
+  .main-class-2 .seccion-belleza {
+    height: 260px;
+  }
+  .main-class-2 .seccion-belleza div {
+    height: 260px;
+    background-size: 90% 250px;
+    background-position: center;
+  }
+  .main-class-2 .seccion-belleza div li h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .main-class-2 .seccion-belleza-2 {
+    height: 3100px;
+    display: flex;
+    align-items: flex-start;
+    margin: 5px;
+    padding: 10px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos {
+    display: flex;
+    gap: 2px;
+    width: 90px;
+    height: 50px;
+    transition: width 2s, height 3s;
+  }
+  .main-class-2 .seccion-belleza-2 .productos:hover {
+    width: 95px;
+    height: 190px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos h2, .main-class-2 .seccion-belleza-2 .productos h3 {
+    font-size: 15px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos-2 {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos-2 li img {
+    width: 150px;
+    height: 150px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos-2 li h2 {
+    font-size: 10px;
+    height: 50px;
+    width: 150px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos-2 li button {
+    font-size: 12px;
+    width: 150px;
+  }
+  .main-class-1 {
+    height: 2650px;
+  }
+  .main-class-1 .seccion-manicuria {
+    height: 260px;
+  }
+  .main-class-1 .seccion-manicuria div {
+    height: 260px;
+    background-size: 90% 250px;
+    background-position: center;
+  }
+  .main-class-1 .seccion-manicuria div li h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .main-class-1 .seccion-manicuria-2 {
+    height: 2000px;
+    display: flex;
+    align-items: flex-start;
+    margin: 5px;
+    padding: 10px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos {
+    display: flex;
+    gap: 2px;
+    width: 90px;
+    height: 50px;
+    transition: width 2s, height 3s;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos:hover {
+    width: 95px;
+    height: 190px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos h2, .main-class-1 .seccion-manicuria-2 .productos h3 {
+    font-size: 15px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos-2 {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos-2 li img {
+    width: 150px;
+    height: 150px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos-2 li h2 {
+    font-size: 10px;
+    height: 50px;
+    width: 150px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos-2 li button {
+    font-size: 12px;
+    width: 150px;
+  }
+  .main-class-3 section div {
+    display: flex;
+    justify-content: center;
+  }
+  .main-class-3 section div li p {
+    font-size: 15px;
+  }
+  .main-class-3 section div li h1 {
+    font-size: 22px;
+  }
+  footer {
+    height: 200px;
+  }
+  footer div {
+    padding: 15px 3px 0px 3px;
+    margin-top: 5px;
+  }
+  footer div li img {
+    height: 22px;
+    width: 22px;
+  }
+  footer div li h2, footer div li p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 375px) {
+  header {
+    height: 150px;
+  }
+  header section {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(103, 65, 241);
+    background-image: url(../assets/images/banner-cir.png);
+    background-size: 100px 100px;
+    background-position: 10% 50%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 150px;
+  }
+  header section div {
+    gap: 10px;
+  }
+  header section div a img {
+    width: 25px;
+    height: 25px;
+  }
+  header section nav {
+    background-color: rgb(103, 65, 241);
+    justify-content: space-around;
+  }
+  header section nav .checkbtn {
+    display: block;
+  }
+  header section nav ul {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 500px;
+    background-color: rgb(103, 65, 241);
+    top: 50px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  header section nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  header section nav ul li a {
+    font-size: 20px;
+  }
+  header section nav #check:checked ~ ul {
+    left: 0;
+  }
+  .carousel-item img {
+    height: 300px;
+  }
+  .carousel-item h2 {
+    font-size: 21px;
+    font-weight: bolder;
+  }
+  .carousel-item p {
+    font-size: 10px;
+    word-spacing: 1px;
+  }
+  .catl-resg {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-size: 80% 190px;
+    background-position: top;
+    gap: 100px;
+  }
+  .catl-resg .catalogo p {
+    font-size: 11px;
+    text-align: right;
+    word-spacing: 1px;
+  }
+  .catl-resg .catalogo h3 {
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+  }
+  .catl-resg .registrarme {
+    height: 170px;
+  }
+  .catl-resg .registrarme li a {
+    width: 70%;
+    height: 50px;
+    font-size: 19px;
+  }
+  .catl-resg .registrarme li p {
+    font-size: 12px;
+    word-spacing: 1px;
+  }
+  .main-class {
+    height: 2900px;
+  }
+  .main-class .seccion-accesorios {
+    height: 260px;
+  }
+  .main-class .seccion-accesorios div {
+    height: 260px;
+    background-size: 90% 250px;
+    background-position: center;
+  }
+  .main-class .seccion-accesorios div li h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .main-class .seccion-accesorios-2 {
+    height: 2690px;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 5px;
+  }
+  .main-class .seccion-accesorios-2 .productos {
+    display: flex;
+    gap: 2px;
+    width: 90px;
+    height: 50px;
+    transition: width 2s, height 3s;
+  }
+  .main-class .seccion-accesorios-2 .productos:hover {
+    width: 95px;
+    height: 190px;
+  }
+  .main-class .seccion-accesorios-2 .productos h2, .main-class .seccion-accesorios-2 .productos h3 {
+    font-size: 15px;
+  }
+  .main-class .seccion-accesorios-2 .productos-2 {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+  }
+  .main-class .seccion-accesorios-2 .productos-2 li img {
+    width: 150px;
+    height: 150px;
+  }
+  .main-class .seccion-accesorios-2 .productos-2 li h2 {
+    font-size: 10px;
+    height: 50px;
+    width: 150px;
+  }
+  .main-class .seccion-accesorios-2 .productos-2 li button {
+    font-size: 12px;
+    width: 150px;
+  }
+  .main-class-2 {
+    height: 4050px;
+  }
+  .main-class-2 .seccion-belleza {
+    height: 260px;
+  }
+  .main-class-2 .seccion-belleza div {
+    height: 260px;
+    background-size: 90% 250px;
+    background-position: center;
+  }
+  .main-class-2 .seccion-belleza div li h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .main-class-2 .seccion-belleza-2 {
+    height: 3100px;
+    display: flex;
+    align-items: flex-start;
+    margin: 5px;
+    padding: 10px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos {
+    display: flex;
+    gap: 2px;
+    width: 90px;
+    height: 50px;
+    transition: width 2s, height 3s;
+  }
+  .main-class-2 .seccion-belleza-2 .productos:hover {
+    width: 95px;
+    height: 190px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos h2, .main-class-2 .seccion-belleza-2 .productos h3 {
+    font-size: 12px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos-2 {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos-2 li img {
+    width: 150px;
+    height: 150px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos-2 li h2 {
+    font-size: 10px;
+    height: 50px;
+    width: 150px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos-2 li button {
+    font-size: 12px;
+    width: 150px;
+  }
+  .main-class-1 {
+    height: 2650px;
+  }
+  .main-class-1 .seccion-manicuria {
+    height: 260px;
+  }
+  .main-class-1 .seccion-manicuria div {
+    height: 260px;
+    background-size: 90% 250px;
+    background-position: center;
+  }
+  .main-class-1 .seccion-manicuria div li h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .main-class-1 .seccion-manicuria-2 {
+    height: 2000px;
+    display: flex;
+    align-items: flex-start;
+    margin: 5px;
+    padding: 10px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos {
+    display: flex;
+    gap: 2px;
+    width: 90px;
+    height: 50px;
+    transition: width 2s, height 3s;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos:hover {
+    width: 95px;
+    height: 190px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos h2, .main-class-1 .seccion-manicuria-2 .productos h3 {
+    font-size: 12px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos-2 {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos-2 li img {
+    width: 150px;
+    height: 150px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos-2 li h2 {
+    font-size: 10px;
+    height: 50px;
+    width: 150px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos-2 li button {
+    font-size: 12px;
+    width: 150px;
+  }
+  .main-class-3 section div {
+    display: flex;
+    justify-content: center;
+  }
+  .main-class-3 section div li p {
+    font-size: 15px;
+  }
+  .main-class-3 section div li h1 {
+    font-size: 22px;
+  }
+  footer {
+    height: 200px;
+  }
+  footer div {
+    padding: 15px 3px 0px 3px;
+    margin-top: 5px;
+  }
+  footer div li img {
+    height: 22px;
+    width: 22px;
+  }
+  footer div li h2, footer div li p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    height: 150px;
+  }
+  header section {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(103, 65, 241);
+    background-image: url(../assets/images/banner-cir.png);
+    background-size: 100px 100px;
+    background-position: 10% 50%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 150px;
+  }
+  header section div {
+    gap: 10px;
+  }
+  header section div a img {
+    width: 25px;
+    height: 25px;
+  }
+  header section nav {
+    background-color: rgb(103, 65, 241);
+    justify-content: space-around;
+  }
+  header section nav .checkbtn {
+    display: block;
+  }
+  header section nav ul {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 500px;
+    background-color: rgb(103, 65, 241);
+    top: 50px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  header section nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  header section nav ul li a {
+    font-size: 20px;
+  }
+  header section nav #check:checked ~ ul {
+    left: 0;
+  }
+  .carousel-item img {
+    height: 300px;
+  }
+  .carousel-item h2 {
+    font-size: 21px;
+    font-weight: bolder;
+  }
+  .carousel-item p {
+    font-size: 10px;
+    word-spacing: 1px;
+  }
+  .catl-resg {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-size: 80% 190px;
+    background-position: top;
+    gap: 100px;
+  }
+  .catl-resg .catalogo p {
+    font-size: 11px;
+    text-align: right;
+    word-spacing: 1px;
+  }
+  .catl-resg .catalogo h3 {
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+  }
+  .catl-resg .registrarme {
+    height: 170px;
+  }
+  .catl-resg .registrarme li a {
+    width: 70%;
+    height: 50px;
+    font-size: 19px;
+  }
+  .catl-resg .registrarme li p {
+    font-size: 12px;
+    word-spacing: 1px;
+  }
+  .main-class {
+    height: 2900px;
+  }
+  .main-class .seccion-accesorios {
+    height: 260px;
+  }
+  .main-class .seccion-accesorios div {
+    height: 260px;
+    background-size: 90% 250px;
+    background-position: center;
+  }
+  .main-class .seccion-accesorios div li h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .main-class .seccion-accesorios-2 {
+    height: 2690px;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 5px;
+  }
+  .main-class .seccion-accesorios-2 .productos {
+    display: flex;
+    gap: 2px;
+    width: 90px;
+    height: 50px;
+    transition: width 2s, height 3s;
+  }
+  .main-class .seccion-accesorios-2 .productos:hover {
+    width: 95px;
+    height: 190px;
+  }
+  .main-class .seccion-accesorios-2 .productos h2, .main-class .seccion-accesorios-2 .productos h3 {
+    font-size: 12px;
+  }
+  .main-class .seccion-accesorios-2 .productos-2 {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+  }
+  .main-class .seccion-accesorios-2 .productos-2 li img {
+    width: 150px;
+    height: 150px;
+  }
+  .main-class .seccion-accesorios-2 .productos-2 li h2 {
+    font-size: 10px;
+    height: 50px;
+    width: 150px;
+  }
+  .main-class .seccion-accesorios-2 .productos-2 li button {
+    font-size: 12px;
+    width: 150px;
+  }
+  .main-class-2 {
+    height: 4050px;
+  }
+  .main-class-2 .seccion-belleza {
+    height: 260px;
+  }
+  .main-class-2 .seccion-belleza div {
+    height: 260px;
+    background-size: 90% 250px;
+    background-position: center;
+  }
+  .main-class-2 .seccion-belleza div li h1 {
+    font-size: 21px;
+    text-align: center;
+  }
+  .main-class-2 .seccion-belleza-2 {
+    height: 3100px;
+    display: flex;
+    align-items: flex-start;
+    margin: 5px;
+    padding: 10px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos {
+    display: flex;
+    gap: 2px;
+    width: 90px;
+    height: 50px;
+    transition: width 2s, height 3s;
+  }
+  .main-class-2 .seccion-belleza-2 .productos:hover {
+    width: 95px;
+    height: 190px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos h2, .main-class-2 .seccion-belleza-2 .productos h3 {
+    font-size: 10px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos-2 {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos-2 li img {
+    width: 150px;
+    height: 150px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos-2 li h2 {
+    font-size: 10px;
+    height: 50px;
+    width: 150px;
+  }
+  .main-class-2 .seccion-belleza-2 .productos-2 li button {
+    font-size: 12px;
+    width: 150px;
+  }
+  .main-class-1 {
+    height: 2650px;
+  }
+  .main-class-1 .seccion-manicuria {
+    height: 260px;
+  }
+  .main-class-1 .seccion-manicuria div {
+    height: 260px;
+    background-size: 90% 250px;
+    background-position: center;
+  }
+  .main-class-1 .seccion-manicuria div li h1 {
+    font-size: 21px;
+    text-align: center;
+  }
+  .main-class-1 .seccion-manicuria-2 {
+    height: 2000px;
+    display: flex;
+    align-items: flex-start;
+    margin: 5px;
+    padding: 10px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos {
+    display: flex;
+    gap: 2px;
+    width: 90px;
+    height: 50px;
+    transition: width 2s, height 3s;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos:hover {
+    width: 95px;
+    height: 190px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos h2, .main-class-1 .seccion-manicuria-2 .productos h3 {
+    font-size: 10px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos-2 {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos-2 li img {
+    width: 150px;
+    height: 150px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos-2 li h2 {
+    font-size: 10px;
+    height: 50px;
+    width: 150px;
+  }
+  .main-class-1 .seccion-manicuria-2 .productos-2 li button {
+    font-size: 12px;
+    width: 150px;
+  }
+  .main-class-3 section div {
+    display: flex;
+    justify-content: center;
+  }
+  .main-class-3 section div li p {
+    font-size: 20px;
+  }
+  .main-class-3 section div li h1 {
+    font-size: 25px;
+  }
+  footer {
+    height: 200px;
+  }
+  footer div {
+    padding: 15px 3px 0px 3px;
+    margin-top: 5px;
+  }
+  footer div li img {
+    height: 22px;
+    width: 22px;
+  }
+  footer div li h2, footer div li p {
+    font-size: 12px;
   }
 }
 

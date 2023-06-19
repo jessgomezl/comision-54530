@@ -1,59 +1,69 @@
 header{
-    height: 450px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  section{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    section{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
-        background-color: $color-principal;
-        width:100%;
-        height: 450px;
-        background-image:url(../assets/images/banner.jpg);
-        background-size: 100% 400px;
-        background-repeat: no-repeat;
-        background-position: 0px 80px;
-        div{
-          display: flex;
-          flex-direction: row;
-          img{
-            width: 40px;
-            height: 40px;
-          }
-        }
-        nav{
-          background-color: $color-principal;
-          width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: $color-principal;
+    width:100%;
+    height: 450px;
+    background-image:url(../assets/images/banner.jpg);
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
+    background-position: 0px 80px;
+    div{
+      a{
+        img{
+          width: 40px;
           height: 40px;
+          }
+      }
+    }
+    .checkbtn{
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+        display: none;
+    }
+    #check{
+      display: none;
+    }
+    nav{
+      background-color: $color-principal;
+      width: 100%;
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      z-index: 4;
+      ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+        li{
           display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          gap: 20px;
-          z-index: 4;
-          ul{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            list-style: none;
-            li{
-              display: flex;
-              list-style: none;
-              font-family: 'Merriweather', serif;
-              font-size: 30px;
-              font-weight: bold;
-              word-spacing: 15px;
-              a{
-                text-decoration: none;
-                color:black;
-                &:hover{
-                  color: $color-tercero;
-                }
-              }
+          list-style: none;
+          font-family: 'Merriweather', serif;
+          font-size: 30px;
+          font-weight: bold;
+          word-spacing: 15px;
+          a{
+            text-decoration: none;
+            color:black;
+            &:hover{
+              color: $color-tercero;
             }
           }
         }
+      }
     }
+  }
 }
