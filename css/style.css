@@ -80,7 +80,6 @@ header section nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 10px;
   z-index: 6;
 }
 header section nav ul {
@@ -210,27 +209,50 @@ header section nav ul li a:hover {
 }
 
 .main-nosotros {
-  padding: 20px;
+  padding: 10px;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
 }
-.main-nosotros div h2 {
+.main-nosotros .div-nos {
+  background-color: rgb(110, 243, 139);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.main-nosotros .div-nos h2 {
+  text-align: center;
   font-family: "Merriweather", serif;
   font-size: 40px;
-  color: rgb(110, 243, 139);
+  color: rgb(103, 65, 241);
 }
-.main-nosotros div h2:hover {
+.main-nosotros .div-nos h2:hover {
   color: black;
   text-decoration: underline;
 }
-.main-nosotros div img {
-  height: 400px;
-  width: 500px;
-}
-.main-nosotros div p {
+.main-nosotros .div-nos p {
+  padding: 50px;
+  text-align: justify;
   font-family: "Merriweather", serif;
   font-size: 27px;
+  word-spacing: 3px;
+}
+.main-nosotros div img {
+  height: 700px;
+  width: 100%;
+}
+.main-nosotros div img {
+  height: 700px;
+  width: 100%;
+}
+.main-nosotros .div-nos {
+  background-color: rgb(110, 243, 139);
+}
+.main-nosotros .div-nos p {
+  padding: 50px;
+  font-family: "Merriweather", serif;
+  font-size: 27px;
+  word-spacing: 3px;
 }
 
 .main-class {
@@ -260,6 +282,9 @@ header section nav ul li a:hover {
   text-align: left;
   list-style: none;
 }
+.main-class .seccion-accesorios div li h1:hover {
+  color: rgb(218, 55, 109);
+}
 .main-class .seccion-accesorios-2 {
   display: flex;
   height: 1500px;
@@ -283,7 +308,7 @@ header section nav ul li a:hover {
 }
 .main-class .seccion-accesorios-2 .productos h2 {
   font-family: "Merriweather", serif;
-  font-size: 35px;
+  font-size: 40px;
 }
 .main-class .seccion-accesorios-2 .productos h2:hover {
   color: rgb(103, 65, 241);
@@ -291,7 +316,7 @@ header section nav ul li a:hover {
 }
 .main-class .seccion-accesorios-2 .productos h3 {
   font-family: "Merriweather", serif;
-  font-size: 17px;
+  font-size: 21px;
   gap: 10px;
 }
 .main-class .seccion-accesorios-2 .productos h3:hover {
@@ -354,6 +379,9 @@ header section nav ul li a:hover {
   text-align: left;
   list-style: none;
 }
+.main-class-2 .seccion-belleza div li h1:hover {
+  color: rgb(240, 162, 110);
+}
 .main-class-2 .seccion-belleza-2 {
   display: flex;
   height: 2100px;
@@ -385,7 +413,7 @@ header section nav ul li a:hover {
 }
 .main-class-2 .seccion-belleza-2 .productos h3 {
   font-family: "Merriweather", serif;
-  font-size: 17px;
+  font-size: 21px;
   gap: 10px;
 }
 .main-class-2 .seccion-belleza-2 .productos h3:hover {
@@ -448,6 +476,9 @@ header section nav ul li a:hover {
   text-align: left;
   list-style: none;
 }
+.main-class-1 .seccion-manicuria div li h1:hover {
+  color: rgb(20, 236, 20);
+}
 .main-class-1 .seccion-manicuria-2 {
   display: flex;
   height: 1500px;
@@ -479,7 +510,7 @@ header section nav ul li a:hover {
 }
 .main-class-1 .seccion-manicuria-2 .productos h3 {
   font-family: "Merriweather", serif;
-  font-size: 17px;
+  font-size: 21px;
   gap: 10px;
 }
 .main-class-1 .seccion-manicuria-2 .productos h3:hover {
@@ -535,6 +566,9 @@ header section nav ul li a:hover {
   font-family: "Merriweather", serif;
   font-size: 40px;
 }
+.main-class-3 section div li h1:hover {
+  color: rgb(103, 65, 241);
+}
 .main-class-3 section div li p {
   font-family: "Merriweather", serif;
   font-size: 30px;
@@ -542,6 +576,62 @@ header section nav ul li a:hover {
 }
 .main-class-3 .container-fluid {
   padding: 50px;
+}
+
+.main-ayuda {
+  padding: 10px;
+}
+.main-ayuda .section-ayuda {
+  background-color: rgb(110, 243, 139);
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main-ayuda .section-ayuda div h2 {
+  font-family: "Merriweather", serif;
+  font-size: 40px;
+  text-align: center;
+}
+.main-ayuda .section-ayuda div h2:hover {
+  color: rgb(103, 65, 241);
+}
+.main-ayuda .section-ayuda div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-ayuda .section-ayuda div h3 {
+  font-family: "Merriweather", serif;
+  font-size: 29px;
+}
+.main-ayuda .section-ayuda div h3:hover {
+  text-decoration: underline rgb(119, 228, 212);
+}
+.main-ayuda section {
+  padding: 30px;
+}
+.main-ayuda section .div-ayuda {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-ayuda section .div-ayuda h3 {
+  font-family: "Merriweather", serif;
+  font-size: 27px;
+}
+.main-ayuda section .div-ayuda h3:hover {
+  color: rgb(119, 228, 212);
+  text-decoration: underline black;
+}
+.main-ayuda section .div-ayuda h4 {
+  font-family: "Merriweather", serif;
+  font-size: 21px;
+  text-decoration: underline;
+}
+.main-ayuda section .div-ayuda p {
+  font-family: "Merriweather", serif;
+  font-size: 17px;
 }
 
 footer {
@@ -577,17 +667,14 @@ footer div li h2:hover, footer div li p:hover {
 }
 
 @media (max-width: 1024px) {
-  header {
+  header section {
     display: flex;
   }
-  header nav {
-    display: flex;
-    justify-content: space-between;
+  header section nav ul {
+    gap: 15px;
   }
-  header nav ul li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  header section nav ul li {
+    font-size: 27px;
   }
   .carousel-item {
     margin-left: 4%;
@@ -627,6 +714,12 @@ footer div li h2:hover, footer div li p:hover {
     align-items: center;
   }
   .catl-resg .registrarme li p {
+    font-size: 25px;
+  }
+  .main-nosotros .div-nos h2 {
+    font-size: 30px;
+  }
+  .main-nosotros .div-nos p {
     font-size: 25px;
   }
   .main-class {
@@ -707,6 +800,15 @@ footer div li h2:hover, footer div li p:hover {
   .main-class-3 section div li h1 {
     font-size: 30px;
   }
+  .main-ayuda .section-ayuda div h2 {
+    font-size: 30px;
+  }
+  .main-ayuda .section-ayuda div h3 {
+    font-size: 25px;
+  }
+  .main-ayuda section .div-ayuda h3 {
+    font-size: 23px;
+  }
   footer {
     height: 230px;
   }
@@ -733,7 +835,7 @@ footer div li h2:hover, footer div li p:hover {
     background-image: url(../assets/images/banner-cir.png);
     background-size: 150px 150px;
     background-position: 10% 50%;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
   }
   header section div {
@@ -754,7 +856,7 @@ footer div li h2:hover, footer div li p:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 10px;
+    gap: 5px;
   }
   header section nav ul li {
     font-size: 17px;
@@ -800,6 +902,16 @@ footer div li h2:hover, footer div li p:hover {
     font-size: 25px;
     word-spacing: 2px;
   }
+  .main-nosotros .div-nos h2 {
+    font-size: 30px;
+  }
+  .main-nosotros .div-nos p {
+    font-size: 17px;
+  }
+  .main-nosotros div img {
+    height: 100%;
+    width: 100%;
+  }
   .main-class {
     height: 2600px;
   }
@@ -882,6 +994,15 @@ footer div li h2:hover, footer div li p:hover {
   }
   .main-class-3 section div li h1 {
     font-size: 25px;
+  }
+  .main-ayuda .section-ayuda div h2 {
+    font-size: 30px;
+  }
+  .main-ayuda .section-ayuda div h3 {
+    font-size: 25px;
+  }
+  .main-ayuda section .div-ayuda h3 {
+    font-size: 23px;
   }
   footer {
     height: 200px;
@@ -994,6 +1115,21 @@ footer div li h2:hover, footer div li p:hover {
   .catl-resg .registrarme li p {
     font-size: 12px;
     word-spacing: 1px;
+  }
+  .main-nosotros {
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-nosotros .div-nos h2 {
+    font-size: 22px;
+  }
+  .main-nosotros .div-nos p {
+    font-size: 15px;
+  }
+  .main-nosotros div img {
+    height: 285px;
+    width: 100%;
   }
   .main-class {
     height: 2900px;
@@ -1166,6 +1302,25 @@ footer div li h2:hover, footer div li p:hover {
   }
   .main-class-3 section div li h1 {
     font-size: 22px;
+  }
+  .main-ayuda {
+    padding: 0%;
+    margin-top: 10px;
+  }
+  .main-ayuda .section-ayuda div h2 {
+    font-size: 22px;
+  }
+  .main-ayuda .section-ayuda div h3 {
+    font-size: 18px;
+  }
+  .main-ayuda section .div-ayuda h3 {
+    font-size: 18px;
+  }
+  .main-ayuda section .div-ayuda h4 {
+    font-size: 15px;
+  }
+  .main-ayuda section .div-ayuda p {
+    font-size: 15px;
   }
   footer {
     height: 200px;
@@ -1734,6 +1889,31 @@ footer div li h2:hover, footer div li p:hover {
   }
   .main-class-3 section div li h1 {
     font-size: 25px;
+  }
+  .main-ayuda {
+    padding: 0%;
+    margin-top: 10px;
+  }
+  .main-ayuda .section-ayuda div {
+    gap: 10px;
+  }
+  .main-ayuda .section-ayuda div h2 {
+    font-size: 25px;
+  }
+  .main-ayuda .section-ayuda div h3 {
+    font-size: 20px;
+  }
+  .main-ayuda section {
+    padding: 10px;
+  }
+  .main-ayuda section .div-ayuda h3 {
+    font-size: 18px;
+  }
+  .main-ayuda section .div-ayuda h4 {
+    font-size: 15px;
+  }
+  .main-ayuda section .div-ayuda p {
+    font-size: 15px;
   }
   footer {
     height: 200px;

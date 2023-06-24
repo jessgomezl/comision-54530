@@ -1,24 +1,48 @@
 .main-nosotros{
-    padding: 20px;
+    padding: 10px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    div{
+    .div-nos{
+        background-color: $color-secundario;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         h2{
+            text-align: center;
             font-family:'Merriweather', serif;
             font-size: 40px;
-            color: $color-secundario;
+            color: $color-principal;
             &:hover{
-                color: black;
+                color:black;
                 text-decoration: underline;
             }
         }
-        img{
-            @include sizen (500px, 400px);
-        }
         p{
+            padding: 50px;
+            text-align:justify;
             font-family:'Merriweather', serif;
             font-size: 27px;
+            word-spacing: 3px
+        }
+    }
+    div{
+        img{
+            @include sizen (100%, 700px);
+        }
+    }
+    div{
+        img{
+            @include sizen (100%, 700px);
+        }
+    }
+    .div-nos{
+        background-color: $color-secundario;
+        p{
+            padding: 50px;
+            font-family:'Merriweather', serif;
+            font-size: 27px;
+            word-spacing: 3px;
         }
     }
 }

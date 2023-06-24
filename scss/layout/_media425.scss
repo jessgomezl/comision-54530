@@ -103,6 +103,20 @@ header{
             }
         }
 }
+.main-nosotros{
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    .div-nos h2{
+        font-size: 22px;
+    }
+    .div-nos p{
+        font-size: 15px;
+    }
+    div img{
+        @include sizen (100%, 285px);
+    }
+}
 .main-class{
     height: 2900px;
     .seccion-accesorios{
@@ -282,6 +296,31 @@ header{
             h1{
                 font-size: 22px;
             }
+        }
+    }
+}
+.main-ayuda{
+    padding: 0%;
+    margin-top: 10px;
+    .section-ayuda{
+        div{
+            h2{
+                font-size: 22px;
+            }
+            h3{
+                font-size: 18px;
+            }
+        }
+    }
+    section .div-ayuda{
+        h3{
+            font-size:18px;
+        }
+        h4{
+            font-size: 15px;
+        }
+        p{
+            font-size: 15px;
         }
     }
 }

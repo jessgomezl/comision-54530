@@ -14,6 +14,9 @@
             h1{
                 font-family: 'Merriweather', serif;
                 font-size: 40px;
+                &:hover{
+                    color: $color-principal;
+                }
             }
             p{
                 font-family: 'Merriweather', serif;

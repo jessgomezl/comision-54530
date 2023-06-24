@@ -8,7 +8,7 @@
             background-image: url( ../assets/images/banner-cir.png);
             background-size: 150px 150px;
             background-position: 10% 50%;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: flex-end;
             div{
                 margin-right: 10px;
@@ -29,7 +29,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: flex-end;
-                    gap: 10px;
+                    gap: 5px;
                     li{
                         font-size: 17px;
                     }
@@ -82,6 +82,17 @@
                     word-spacing: 2px;
                 }
             }
+        }
+    }
+    .main-nosotros{
+        .div-nos h2{
+            font-size: 30px;
+        }
+        .div-nos p{
+            font-size: 17px;
+        }
+        div img{
+            @include sizen (100%, 100%);
         }
     }
     .main-class{
@@ -168,6 +179,23 @@
                 h1{
                     font-size: 25px;
                 }
+            }
+        }
+    }
+    .main-ayuda{
+        .section-ayuda{
+            div{
+                h2{
+                    font-size: 30px;
+                }
+                h3{
+                    font-size: 25px;
+                }
+            }
+        }
+        section .div-ayuda{
+            h3{
+                font-size:23px;
             }
         }
     }

@@ -1,15 +1,16 @@
 @media (max-width:1024px){
     header{
-        display: flex;
-        nav{
+        section{
             display: flex;
-            justify-content: space-between;
-            ul li{
-                display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
+            nav{
+                ul{
+                    gap: 15px;
+                    li{
+                        font-size: 27px;
+                    }
+                }
             }
-        }
+        }   
     }
     .carousel-item{
         margin-left: 4%;
@@ -49,6 +50,14 @@
             li p{
                 font-size: 25px;
             }
+        }
+    }
+    .main-nosotros{
+        .div-nos h2{
+            font-size: 30px;
+        }
+        .div-nos p{
+            font-size: 25px;
         }
     }
     .main-class{
@@ -130,6 +139,23 @@
                 h1{
                     font-size: 30px;
                 }
+            }
+        }
+    }
+    .main-ayuda{
+        .section-ayuda{
+            div{
+                h2{
+                    font-size: 30px;
+                }
+                h3{
+                    font-size: 25px;
+                }
+            }
+        }
+        section .div-ayuda{
+            h3{
+                font-size:23px;
             }
         }
     }

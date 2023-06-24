@@ -1,0 +1,56 @@
+.main-ayuda{
+    padding: 10px;
+    .section-ayuda{
+        background-color: $color-secundario;
+        @include sizen (100%, 200px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        div{
+            h2{
+                font-family: 'Merriweather', serif;
+                font-size: 40px;
+                text-align: center;
+                &:hover{
+                    color: $color-principal;
+                }
+            }
+        }
+        div{
+            display: flex;
+            justify-content: space-evenly;
+            h3{
+                font-family: 'Merriweather', serif;
+                font-size: 29px;
+                &:hover{
+                    text-decoration: underline $color-tercero;
+                }
+            }
+        }
+    }
+    section{
+        padding: 30px;
+        .div-ayuda{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h3{
+                font-family:'Merriweather', serif;
+                font-size: 27px;
+                &:hover{
+                    color: $color-tercero;
+                    text-decoration: underline black;
+                }
+            }
+            h4{
+                font-family:'Merriweather', serif;
+                font-size: 21px;
+                text-decoration: underline;
+            }
+            p{
+                font-family: 'Merriweather', serif;
+                font-size: 17px;
+            }
+        }
+    }
+}
