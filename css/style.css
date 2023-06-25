@@ -579,7 +579,7 @@ header section nav ul li a:hover {
 }
 
 .main-ayuda {
-  padding: 10px;
+  margin-top: 10px;
 }
 .main-ayuda .section-ayuda {
   background-color: rgb(110, 243, 139);
